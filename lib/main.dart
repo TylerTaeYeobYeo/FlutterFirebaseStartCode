@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lunch_menu/home_page/home_page.dart';
 import 'package:lunch_menu/login_page/login.dart';
-import 'package:lunch_menu/menu/menu_all.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,8 +15,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'login',
       routes: {
         'login' : (BuildContext context) => LoginPage(),
-        'home' : (BuildContext context) => HomePage(),
-        'menu_all' : (BuildContext context) => MenuListPage(),
+        //add routes
       }
     );
   }

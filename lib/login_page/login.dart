@@ -16,7 +16,10 @@ class LoginPage extends StatelessWidget {
               child: Text("로그인"),
               onPressed: () async {
                 if(await store.user.login()){
-                  Navigator.pushNamed(context, 'home');
+                  // navigate to the page after login
+                }
+                else {
+                  //fail message
                 }
               },
             )

@@ -11,9 +11,9 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Text("점심 뭐 먹을까?"),
+            Text("AppTitle"),
             FlatButton(
-              child: Text("로그인"),
+              child: Text("Sign In"),
               onPressed: () async {
                 if(await store.user.login()){
                   // navigate to the page after login
